@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "You.com Search Engine",
+  "version": "1.0",
+  "description" : "Sets Firefox's default search engine to You.com",
+  "icons": {
+      "16": "icons/favicon-16x16.png",
+      "48": "icons/favicon-48x48.png",
+      "128": "icons/favicon-128x128.png"
+    },
+  "chrome_settings_overrides": {
+    "homepage": "https://you.com",
+    "search_provider": {
+      "name": "you.com",
+      "keyword": "you",
+      "search_url": "https://you.com/search?q={searchTerms}",
+      "suggest_url": "https://you.com/api/ac?q={searchTerms}",
+      "favicon_url": "https://you.com/favicon/favicon.ico",
+      "encoding": "UTF-8",
+      "is_default": true 
+    }
+  }
+}
