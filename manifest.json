@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "You.com Search Engine",
-  "version": "1.0",
-  "description" : "Sets Firefox's default search engine to You.com",
+  "version": "1.1",
+  "description" : "Sets Firefox's default search engine and homepage to You.com",
   "icons": {
       "16": "icons/favicon-16x16.png",
       "48": "icons/favicon-48x48.png",
@@ -19,5 +19,12 @@
       "encoding": "UTF-8",
       "is_default": true 
     }
-  }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://localhost/*", "*://you.com/*", "*://*.you.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
 }
