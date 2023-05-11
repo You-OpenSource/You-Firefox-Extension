@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "You.com Search Engine",
-  "version": "1.3",
+  "version": "1.4",
   "description" : "Sets Firefox's default search engine to You.com",
   "icons": {
       "16": "icons/favicon-16x16.png",
@@ -12,7 +12,7 @@
     "search_provider": {
       "name": "you.com",
       "keyword": "you",
-      "search_url": "https://you.com/search?q={searchTerms}&fromExtension=true",
+      "search_url": "https://you.com/search?q={searchTerms}&tbm=youchat&fromExtension=true",
       "suggest_url": "https://you.com/api/ac?q={searchTerms}&fromExtension=true",
       "favicon_url": "https://you.com/favicon/favicon.ico",
       "encoding": "UTF-8",
